@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/*  */
+
+header {
+  /* height: 5rem; */
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: 1000;
+}
+
+.nav-bar {
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /* padding: 1.2em 0; */
+  justify-content: space-between;
+}
+.nav-bar .logo-img {
+  width: 150px;
+}
+.nav-bar .nav-lists {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-lists .li-div {
+  font-size: 1rem;
+  margin: 0 1.6em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 1.6em 0.3em;
+}
+
+.nav-lists .li-div:hover {
+  background-color: rgb(234, 232, 232);
+}
+.nav-lists .li-div p {
+  font-size: 1rem;
+}
+
+.nav-lists .li-div p span {
+  margin-left: 0.4rem;
+}
+
+.nav-lists .li-div p span img {
+  padding-bottom: 0.24em;
+}
+.nav-btn button {
+  background-color: transparent;
+  border: 1.5px solid #00b289;
+  padding: 0.7em 1.2em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #00b289;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.nav-bar button:first-child {
+  background-color: transparent;
+  color: #00b289;
+  margin-right: 1rem;
+}
+
+.nav-bar button:first-child:hover {
+  background-color: #00b289;
+  color: white;
+}
+/* Work flow */
+.workflow-li {
+  background-color: white;
+}
+.main-dropdown-div {
+  /* display: flex; */
+  position: absolute;
+  background-color: white;
+  top: 4.2em;
+  left: -7em;
+  z-index: 1000;
+  display: none;
+}
+
+/*  Workflow */
+/* Left container css */
+.dropdown-left-content {
+  padding: 0em 2em 1.3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  width: 270px;
+  box-shadow: -0px 0px 60px 0 rgb(2 4 69 / 10%);
+  background-color: white;
+}
+.workflow:not(:last-child) {
+  margin-bottom: 1em;
+}
+.workflow-left-boder {
+  border-bottom: 1px solid #b7b8c1;
+  padding-bottom: 2em;
+}
+.workflow-heading {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4c4d5f;
+}
+.workflow-pera {
+  margin-top: 0.3em;
+}
+
+.main-dropdown-div a {
+  text-decoration: none;
+  color: #4c4d5f;
+}
+.workflow-sign {
+  position: relative;
+  margin-top: 1rem;
+}
+.workflow-sign::after {
+  content: ">";
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  font-size: 34px;
+  color: #4c4d5f;
+  font-weight: 400;
+}
+
+/*  workflow right content */
+.dropdown-right-content {
+  display: none;
+  padding: 0.5em 2em 0em;
+  background-color: white;
+  box-shadow: 15px 0px 20px 0px rgb(2 4 69 / 10%);
+}
+.right-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 630px;
+  align-content: center;
+}
+.right-grid-item {
+  padding: 0 0.6em 1em;
+}
+.right-grid-item:hover {
+  background-color: rgb(234, 234, 234);
+}
+.right-item-div {
+  display: flex;
+  gap: 0.8em;
+  margin: 1.4em 0 0 0;
+}
+.right-item-div img {
+  align-self: flex-start;
+  margin-top: 0.3em;
+}
+.item-text-heading {
+  font-size: 16px;
+  margin-bottom: 0.7em;
+}
+.item-text-pera {
+  font-size: 12px;
+}
+
+.workflow-li:hover .main-dropdown-div {
+  display: flex;
+}
+
+/* .dropdown-left-content:has(> .workflow-sign:hover) + .dropdown-right-content {
+  display: block;
+} */
+/* Template Css */
+
+.templates {
+  position: relative;
+}
+.templates-content {
+  display: none;
+  /* align-items: center; */
+  position: absolute;
+  top: 4.2rem;
+  z-index: 1000;
+  left: -3em;
+  background-color: white;
+  /* border: 2px solid red; */
+  box-shadow: -0px 0px 60px 0 rgb(2 4 69 / 10%);
+}
+
+.template-left {
+  padding: 2em 2em 0em;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2.8em; */
+  width: 200px;
+}
+
+.template-left a {
+  text-decoration: none;
+  color: #4c4d5f;
+  position: relative;
+  height: 70px;
+}
+
+.template-left-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+.template-left-item img {
+  width: 20px;
+}
+.template-left-item .temple-left-text {
+  margin-left: 1em;
+  font-size: 14px;
+}
+
+.template-right-content {
+  padding: 2em 1em 0em;
+  /* width: 500px; */
+}
+
+.temp-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  min-width: 350px;
+}
+.right-item-text {
+  text-decoration: none;
+  color: #4c4d5f;
+  padding: 1.6em;
+  border: 1.5px solid black;
+  text-align: center;
+  font-size: 14px;
+}
+.template-right-item {
+  display: none;
+}
+.text-all {
+  border: none;
+  color: #00b289;
+  padding: 1em 1em 1.6em;
+  font-weight: 600;
+  font-size: 16px;
+}
+.temp-item-heading {
+  font-size: 1.3rem;
+  color: #4c4d5f;
+  padding: 0em 0em 0.6em;
+}
+
+.template-left a:hover::after {
+  content: ">";
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  font-size: 34px;
+  color: #4c4d5f;
+  font-weight: 400;
+}
+/* .template-right-item--2 {
+  display: none;
+}
+.template-two:hover .template-right-item--2 {
+  display: flex;
+}
+.template-two:hover .template-right-item--1 {
+  display: none;
+} */
+.templates:hover .templates-content {
+  display: flex;
+}
+
+/*
+Section Pricing
+*/
+.container {
+  width: 75vw;
+  margin: auto;
+}
+.pricing {
+  margin: 15rem auto;
+}
+.page-blue {
+  background-color: #f2faff;
+  position: absolute;
+  transform: rotate(-23deg);
+  top: -35%;
+  right: -7%;
+  width: 90%;
+  height: 120%;
+  z-index: -1;
+  bottom: auto;
+}
+.pricing-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2em;
+  position: relative;
+  z-index: 0;
+}
+.pricing-header h1 {
+  font-size: 2.4rem;
+  color: #4c4d5f;
+  font-weight: 500;
+  margin-right: 1.6em;
+  align-self: flex-end;
+}
+.pricing-header h4 {
+  color: #bbbbc4;
+  font-weight: 500;
+  padding-bottom: 0.7em;
+}
+.toggle-btn-area {
+  width: 50px;
+  height: 28px;
+  background-color: #00b289;
+  border-radius: 10rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7em;
+}
+.toggle-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  margin-left: 0.13rem;
+  transition: all 300ms ease;
+}
+.shift {
+  right: 0.11rem;
+}
+.pricing-header .period-color {
+  color: #4c4d5f;
+}
+
+.pricing-header img {
+  position: absolute;
+  right: 15.2rem;
+  top: -0.8rem;
+  z-index: -2;
+}
+
+/* 
+Price cards
+*/
+.price-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 3.6em;
+}
+.price-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 2em 2em 2em 2em;
+  background-color: white;
+  box-shadow: 0 0 68px 0 rgb(2 4 69 / 8%);
+}
+
+/* .price-card-header {
+} */
+.price-card-header h1 {
+  color: #4c4d5f;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.1em;
+}
+
+.price-card-header p {
+  font-size: 13px;
+  color: #4c4d5f;
+  padding-right: 3em;
+}
+.price-card-money {
+  border-bottom: 2px solid #00b289;
+  width: 95%;
+}
+.price-card-money h1 {
+  font-size: 3.7rem;
+  font-weight: 500;
+  color: #4c4d5f;
+}
+.price-card-money h1 sub,
+.price-card-money h1 sup {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.price-card-money p {
+  float: right;
+}
+.price-card-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: none;
+  margin-top: 1.5em;
+}
+
+.price-card-lists li {
+  color: #4c4d5f;
+  padding-left: 1em;
+  font-size: 15px;
+}
+.price-card-lists li::marker {
+  content: "✓";
+  color: #00b289;
+  font-weight: bolder;
+}
+.price-card button {
+  background-color: transparent;
+  border: 1.5px solid #00b289;
+  width: 250px;
+  height: 57px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #00b289;
+  border-radius: 6px;
+  font-weight: 600;
+  align-self: center;
+  margin-top: 2em;
+}
+.hide-pera {
+  display: none;
+}
+/* qandA section csss */
+.qAndA-Section {
+  width: 60%;
+  margin: 0em auto;
+  padding-bottom: 4em;
+}
+
+.qAndA-Section > h1 {
+  text-align: center;
+  margin: 2em auto;
+  color: #00b289;
+}
+
+.qAndA-box h1:hover {
+  color: #00b289;
+}
+.qAndA-box h1 {
+  cursor: pointer;
+  color: #4c4d5f;
+}
+.qAndA-box h1 span {
+  float: right;
+  font-size: 1.2rem;
+}
+.qAndA-pera {
+  margin: 0.4em 0 1em 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4c4d5f;
+}

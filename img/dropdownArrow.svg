@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v17_B" transform="translate(-1195.000000, -51.000000)" fill="#4C4D5F" fill-rule="nonzero">
+            <g id="01.Header" transform="translate(100.000000, 30.000000)">
+                <g id="Header">
+                    <g id="Menu" transform="translate(1016.000000, 0.000000)">
+                        <g id="Product" transform="translate(0.000000, 11.000000)">
+                            <polygon id="Path" transform="translate(83.923615, 12.868308) rotate(-270.000000) translate(-83.923615, -12.868308) " points="81.9789231 17.7366154 81 16.7576923 84.8893846 12.8683077 81 8.97892308 81.9789231 8 86.8472308 12.8683077"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
